@@ -4,7 +4,9 @@
 # Machine Learning - Trabajo Práctico 1
 
 Dataset: Breast Cancer Wisconsin (Diagnostic) Data Set
+
 Url: http://mlr.cs.umass.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+
 Paper: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.56.707&rep=rep1&type=pdf
 
 ## Determinar el problema que se buscará resolver (por ejemplo, “estimar el costo de una vivienda a partir de sus características”) a partir de los datos

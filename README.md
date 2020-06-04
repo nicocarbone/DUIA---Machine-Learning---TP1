@@ -17,7 +17,7 @@ Las features se obtienen de una biopsia mediante aspiración con aguja de la les
 1. ID number
 2. Diagnosis (M = malignant, B = benign)
 
-Por cada núcleo celular (3x):
+Por cada núcleo celular:
 
 3. radius (mean of distances from center to points on the perimeter)
 4. texture (standard deviation of gray-scale values)
@@ -30,7 +30,7 @@ Por cada núcleo celular (3x):
 11. symmetry
 12. fractal dimension ("coastline approximation" - 1)
 
-TODO: no queda claro si hay 3 de cada feature porque hay 3 nucleos estudiados o por alguna otra razón. Las imagenes ya no estan disponibles en la web.
+por cada feature se tiene el valor medio, el extremo mayor y error estandar, dando un total de 30 features.
 
 La etiqueta se encuentra en la columna 2 y consiste en el diágnostico experto de la biopsia: tumor maligno o benigno.
 
@@ -40,9 +40,11 @@ A priori no parece haber features que puedan introducir sesgos. Por supuesto, la
 
 ## Dividir los datos en conjuntos de entrenamiento, validación y test y estudiar si las distribuciones resultantes son similares entre sí
 
-Hecho en el notebook, segun lo visto en clase. 30% para test, 70% para train y validación, de lo cual 90% va a train y 10% a validation. Con este particionado quedaron 358 instancias en train, 171 en test, 40 en validación. 
+Hecho en el notebook, según lo visto en clase. 30% para test, 70% para train y validación, de lo cual 90% va a train y 10% a validation. Con este particionado quedaron 358 instancias en train, 171 en test, 40 en validación. 
+En el notebook se hacen dos análisis para determinar si las distribuciones son similares entre si. Por un lado se grafican los histogramas relativos para una determinada feature y para cada partición del dataset. Por otro lado, ya que se trata de una clasificación binaria y no tiene sentido realizar un histograma de las etiquetas, simplemente se cuenta la proporción de instancias clasificadas como malignas y benignas en cada dataset. Ambos análisis muestran que las distribuciones resultantes son similares entre si. 
 
 ## Identificar potenciales relaciones entre características y las etiquetas (si existen las etiquetas), o en su defecto entre algunos pares de características. Discutir las relaciones (¿Tienen sentido? ¿A qué pueden deberse?)
+
 
 
 

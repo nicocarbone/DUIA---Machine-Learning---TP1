@@ -40,6 +40,10 @@ A priori no parece haber features que puedan introducir sesgos. Por supuesto, la
 
 ## Dividir los datos en conjuntos de entrenamiento, validación y test y estudiar si las distribuciones resultantes son similares entre sí
 
+Hecho en el notebook, segun lo visto en clase. 30% para test, 70% para train y validación, de lo cual 90% va a train y 10% a validation. Con este particionado quedaron 358 instancias en train, 171 en test, 40 en validación. 
+
 ## Identificar potenciales relaciones entre características y las etiquetas (si existen las etiquetas), o en su defecto entre algunos pares de características. Discutir las relaciones (¿Tienen sentido? ¿A qué pueden deberse?)
+
+
 
 ## Estandarizar los datos y representar gráficamente un par de características.
